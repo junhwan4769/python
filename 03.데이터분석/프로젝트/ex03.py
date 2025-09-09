@@ -13,7 +13,7 @@ def sort_list():
         sel = inputNum('선택>')
         if sel =='': break
         score = score.sort_values(cols[sel], ascending=False)
-        for idx in range(len(score)):
+        for idx in score.index:
             row = score.loc[idx]
             for col in cols:
                 print(f'{col}:{row[col]}', end=' ')
