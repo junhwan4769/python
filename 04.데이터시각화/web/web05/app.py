@@ -45,7 +45,7 @@ def health_data():
     end = page * size
     df2 = df[start:end]
     count = len(df)
-    table = df2.to_html(index=True, classes='table table-striped table-hover')
+    table = df2.to_html(index=True, classes='table table-dark table-striped')
 
     data = {'count':count, 'table':table}
     return data
